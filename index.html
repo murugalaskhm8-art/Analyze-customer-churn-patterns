@@ -7,8 +7,10 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- Chart JS -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -16,7 +18,7 @@
 
     <div class="container">
 
-        <!-- Header -->
+        <!-- HEADER -->
         <header class="header">
             <div>
                 <h1>Customer Churn Intelligence</h1>
@@ -28,66 +30,80 @@
             </button>
         </header>
 
-        <!-- KPI Cards -->
+        <!-- KPI CARDS -->
         <section class="cards">
 
             <div class="card">
                 <h3>Total Customers</h3>
-                <h2 id="customers">24,580</h2>
+                <h2>24,580</h2>
                 <p>+12% this month</p>
             </div>
 
             <div class="card">
                 <h3>Churn Rate</h3>
-                <h2 id="churn">18%</h2>
+                <h2>18%</h2>
                 <p>Improved by 3%</p>
             </div>
 
             <div class="card">
                 <h3>Retained Customers</h3>
-                <h2 id="retained">20,100</h2>
+                <h2>20,100</h2>
                 <p>Strong retention</p>
             </div>
 
             <div class="card">
                 <h3>Revenue Lost</h3>
-                <h2 id="revenue">₹8,75,000</h2>
+                <h2>₹8,75,000</h2>
                 <p>Due to churn</p>
             </div>
 
         </section>
 
-        <!-- Charts -->
+        <!-- CHARTS ROW 1 -->
         <section class="charts">
 
             <div class="chart-card">
                 <h3>Monthly Churn Trend</h3>
-                <canvas id="lineChart"></canvas>
+
+                <div class="chart-container">
+                    <canvas id="lineChart"></canvas>
+                </div>
             </div>
 
             <div class="chart-card">
                 <h3>Churn Reasons</h3>
-                <canvas id="pieChart"></canvas>
+
+                <div class="chart-container">
+                    <canvas id="pieChart"></canvas>
+                </div>
             </div>
 
         </section>
 
+        <!-- CHARTS ROW 2 -->
         <section class="charts">
 
             <div class="chart-card">
                 <h3>Region Wise Churn</h3>
-                <canvas id="barChart"></canvas>
+
+                <div class="chart-container">
+                    <canvas id="barChart"></canvas>
+                </div>
             </div>
 
             <div class="chart-card">
                 <h3>Retention Success</h3>
-                <canvas id="donutChart"></canvas>
+
+                <div class="chart-container">
+                    <canvas id="donutChart"></canvas>
+                </div>
             </div>
 
         </section>
 
-        <!-- Table -->
+        <!-- TABLE -->
         <section class="table-section">
+
             <h2>High Risk Customers</h2>
 
             <table>
@@ -123,21 +139,26 @@
                     </tr>
                 </tbody>
             </table>
+
         </section>
 
-        <!-- Recommendation -->
+        <!-- RECOMMENDATION -->
         <section class="recommendation">
+
             <h2>Retention Recommendation</h2>
 
             <p>
                 Offer loyalty discounts to high-risk customers,
-                improve customer support response time and
-                personalize engagement campaigns to reduce churn.
+                improve support response time,
+                and personalize engagement campaigns
+                to reduce churn.
             </p>
+
         </section>
 
     </div>
 
+    <!-- SCRIPT -->
     <script src="script.js"></script>
 
 </body>
